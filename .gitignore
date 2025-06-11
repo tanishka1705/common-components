@@ -1,6 +1,5 @@
 # Node
 node_modules/
-dist/
 playground/node_modules/
 playground/build/
 
