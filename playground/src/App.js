@@ -5,7 +5,7 @@ import { Button } from 'common-components';
 function App() {
   return (
     <div className="App">
-       <Button label="Click Me!" />
+       <Button label="Click Me!" onClick={()=> alert('Hello')} disabled={true} style={{color: 'green'}}/>
     </div>
   );
 }

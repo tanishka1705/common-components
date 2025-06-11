@@ -1,16 +1,19 @@
 import React from 'react';
 
-const Button = ({ label }) => {
+const Button = ({ label , onClick , disabled = false, style = {},}) => {
   return (
     <button
       style={{
         padding: '10px 20px',
-        backgroundColor: '#007bff',
+         backgroundColor: disabled ? '#ccc' : '#007bff',
         color: '#fff',
         border: 'none',
         borderRadius: '4px',
-        cursor: 'pointer',
+        cursor: disabled ? 'not-allowed' : 'pointer',
+        ...style
       }}
+      onClick={onClick}
+      disabled={disabled}
     >
       {label}
     </button>
